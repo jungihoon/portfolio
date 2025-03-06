@@ -1,0 +1,229 @@
+@charset "utf-8";
+
+.content_intro {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+.content_intro:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  transition: width 1s ease-in-out;
+  z-index: 1;
+}
+
+.sub01 .content_intro:before {
+  background: url("../images/img_main_sub01.jpg") 50% 50% no-repeat;
+}
+
+.sub02 .content_intro:before {
+  background: url("../images/img_main_sub02.jpg") 50% 50% no-repeat;
+}
+
+.sub03 .content_intro:before {
+  background: url("../images/content3/infra04.jpg") 50% 50% no-repeat;
+}
+
+.sub04 .content_intro:before {
+  background: url("../images/content4/powervisual.jpg") 50% 50% no-repeat;
+}
+
+.content_intro_txt {
+  position: relative;
+  width: 1400px;
+  margin: 0 auto;
+  padding: 100px 0 0 0;
+  z-index: 9;
+}
+
+.content_intro_txt p {
+  position: relative;
+  font-size: 3rem;
+  margin: 50px auto;
+  font-weight: 500;
+  letter-spacing: -1.2px;
+}
+
+.sub01 .content_intro .content_intro_txt p {
+  color: #fff;
+}
+
+.sub03 .content_intro .content_intro_txt p {
+  color: #ffff;
+}
+.sub04 .content_intro .content_intro_txt p {
+  color: #fff;
+}
+
+.content_intro_txt p:before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: -40px;
+  width: 100px;
+  height: 100px;
+  background: #04b084;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.content_intro_txt span {
+  display: block;
+  margin: 0 0 30px 0;
+  font-size: 1.3rem;
+  line-height: 2.3rem;
+  letter-spacing: -0.8px;
+}
+
+.content_area .con_title {
+  position: relative;
+  width: 1400px;
+  margin: 0 auto;
+  font-size: 2rem;
+  letter-spacing: -0.5px;
+}
+
+.content_area .con_title:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: #cc6600;
+}
+
+.main_content {
+  width: 100%;
+  position: relative;
+  margin: 150px auto 0;
+}
+
+.main_content .con_list {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  margin: 70px auto 0;
+  overflow: hidden;
+}
+
+.main_content .con_nav {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: calc(50% - 700px);
+  width: 360px;
+  height: 700px;
+  padding: 130px 0 0 0;
+  font-size: 1.7rem;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+}
+.main_content .con_nav li {
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+.main_content .con_nav li a {
+  position: relative;
+  padding: 15px 30px;
+  color: #eee;
+}
+.main_content .con_nav li a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #eee;
+}
+.main_content .con_nav li a.on {
+  font-size: 1.9rem;
+  color: #e65024;
+  transition: color 0.5s ease-out;
+}
+.main_content .con_nav li a.on:before {
+  background-color: #e65024;
+}
+
+.main_content .con_img_wrap {
+  position: absolute;
+  width: 100%;
+  height: 700px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.main_content .con_img_wrap li {
+  height: 700px;
+}
+.main_content .con_img_wrap li img {
+  position: absolute;
+  width: 100%;
+  height: 700px;
+  margin: 0 auto;
+}
+
+.main_content .con_list .con_img_wrap .on {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.essentials {
+  width: 1400px;
+  margin: 150px auto;
+}
+
+.essentials > span {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.essentials ul {
+  width: 1400px;
+  margin: 40px auto;
+  display: flex;
+  /* justify-content: space-around; */
+}
+.essentials ul li {
+  position: relative;
+  display: flex;
+  padding: 40px 0;
+  flex: 1;
+  justify-content: center;
+}
+
+.essentials ul li:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #eee;
+}
+.essentials ul li:nth-child(1):after {
+  display: none;
+}
+
+.essentials ul li img {
+  width: 100px;
+  height: 100px;
+  margin: 0 20px 0 0;
+}
+
+.essentials_txt {
+  display: flex;
+  flex-direction: column;
+  line-height: 3rem;
+}
+
+.essentials_txt strong {
+  font-size: 2rem;
+}

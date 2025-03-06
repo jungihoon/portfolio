@@ -1,0 +1,102 @@
+#content {
+  width: 100%;
+  overflow: hidden;
+}
+.desc {
+  width: 1400px;
+  margin: 0 auto;
+  border-top: 1px solid #000;
+}
+
+.desc li .welfare_txt::before {
+  content: "";
+  position: absolute;
+  bottom: -65px;
+  left: -205px;
+  width: 24px;
+  height: 24px;
+  background: url(../images/content2/arrow_btm.svg) no-repeat #04b084 50% 50%;
+  border-radius: 50%;
+}
+
+.desc ul li {
+  width: 1400px;
+  height: 220px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom: #ccc 1px solid;
+}
+
+.desc .welfare_icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 160px;
+  margin: 0 115px 0 0;
+  background: #f8f8f8;
+  border-radius: 50%;
+}
+
+.desc .welfare_icon.green {
+  background: #04b084;
+}
+
+.desc .welfare_icon img {
+  width: 60px;
+  height: 60px;
+}
+
+.desc .welfare_icon p {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.desc .welfare_txt {
+  position: relative;
+  text-align: justify;
+  font-size: 1.2rem;
+  font-weight: 500;
+  width: 1000px;
+  height: 120px;
+  line-height: 2.1;
+}
+
+.desc .welfare_txt span {
+  font-size: 1rem;
+  color: #666;
+}
+
+.desc .welfare_txt h5 {
+  display: inline;
+}
+
+.recruit_bottom {
+  width: 2000px;
+  margin: 100px auto 0;
+  position: relative;
+}
+
+.recruit_bottom a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.recruit_bottom a {
+  border: 1px solid #fff;
+  margin: 0 auto;
+  color: #fff;
+  width: 200px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 50px;
+  position: absolute;
+  left: 43%;
+}

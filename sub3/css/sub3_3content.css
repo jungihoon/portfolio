@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+.wrap {
+  width: 100%;
+  overflow: hidden;
+}
+
+#content .content_area .content_top .content_top_txt {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+#content .content_area .content_top .content_top_txt p {
+  width: 1400px;
+  font-size: 3rem;
+  text-align: center;
+  margin: 50px auto;
+  font-weight: 500;
+}
+
+#content .content_area .content_top .content_top_txt span {
+  width: 1400px;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2.3rem;
+}
+
+#content .content_area .main_content {
+  width: 100%;
+}
+
+#content .content_area .research {
+  width: 1400px;
+  margin: 100px auto;
+}

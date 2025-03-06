@@ -1,0 +1,110 @@
+<?
+    session_start();
+    @extract($_GET);
+    @extract($_POST);
+    @extract($_SESSION);
+
+    //$userid = $_SESSION['userid'];
+    //$username = $_SESSION['username'];
+    //$usernick = $_SESSION['usernick'];
+    //$userlevel = $_SESSION['userlevel'];
+?>
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CEO인사말</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" />
+    <!-- common -->
+    <link rel="stylesheet" href="../common/css/common.css" />
+    <link rel="stylesheet" href="../common/css/common_sub.css" />
+    <link rel="stylesheet" href="../common/css/aos.css" />
+    <!-- sub -->
+
+    <link rel="stylesheet" href="./css/sub1_3content.css" />
+  </head>
+  <body>
+    <div class="skipNav">
+      <a href="#content">본문 바로가기</a>
+      <a href="#gnb">글로벌 네비게이션 바로가기</a>
+    </div>
+
+    <div class="wrap">
+      <? include "../common/sub_header.html" ?>
+
+      <div id="mainVisual">
+        <img src="./images/content1/sub_visual01.jpg" alt="" />
+        <div class="sub_title">
+          <strong>회사소개</strong>
+          <p>건설 산업의 독보적인 기술력과 전문성으로 고객 맞춤 서비스를 실현합니다.</p>
+        </div>
+      </div>
+
+      <div class="sub_nav">
+        <ul>
+          <li><a href="./sub1_1.html">비전과 핵심가치</a></li>
+          <li><a href="./sub1_2.html">회사연혁</a></li>
+          <li><a class="current" href="./sub1_3.html">CEO인사말</a></li>
+          <li><a href="./sub1_4.html">오시는길</a></li>
+        </ul>
+      </div>
+
+      <article id="content">
+        <div class="title_area">
+          <!-- <div class="line_map">home > 회사소개 > <strong>CEO인사말</strong></div> -->
+          <h2 data-aos="fade-up" data-aos-duration="1000">CEO인사말</h2>
+          <p data-aos="fade-up" data-aos-duration="1000">변함 없는 모습으로 고객과 함께하겠습니다</p>
+        </div>
+
+        <div class="content_area sub03">
+          <div class="content_top" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+            <div class="greeting_title">
+              사회의 니즈를 찾는 것이 곧 비즈니스이고,<br />
+              환경적 지속 가능성을 추구하는 것이 경영입니다.
+            </div>
+            <div class="greeting_con">
+              <p class="txt01">새로운 비전과 핵심가치를 통해<br />고객 중심의, 신뢰할 수 있는 <span class="t-green">GS건설</span>을 만듭니다.</p>
+              <p>
+                언제나 고객을 최우선으로 생각하는 GS는 ‘고객과 함께 내일을 꿈꾸며, 새로운 삶의가치를 창조한다’는 경영이념을 바탕으로 대한민국을 넘어
+                세계의 중심에 우뚝 선 글로벌 기업으로 성장해 왔습니다.
+              </p>
+              <p class="txt01">
+                투명한 신뢰와 끊임없는 혁신으로 더 안전하고<br />
+                행복한 삶의 미래를 완성해 나가는 <span class="t-red">GS건설</span>을 만들 것입니다.
+              </p>
+              <p>
+                이제 GS는 지금까지의 성과를 발판 삼아 디지털 역량 강화와 친환경 경영으로 지속 가능한 미래를 만드는 것에 모든 역량을 집중해
+                <br />나가겠습니다.
+              </p>
+              <strong>- GS건설 대표 허윤홍</strong>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <?include "../common/sub_footer.html"?>
+    </div>
+
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="../common/js/jquery-1.12.4.min.js"></script>
+    <script src="../common/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="../common/js/jquery.easing.1.3.js"></script>
+    <script src="../common/js/common.js"></script>
+    <script src="../mainjs/mainjs.js"></script>
+    <script src="./js/sub1_3.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: "ease-in-out-sine",
+      });
+    </script>
+  </body>
+</html>

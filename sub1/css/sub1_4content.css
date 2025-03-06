@@ -1,0 +1,218 @@
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.content_area {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.content_area .map_address1 {
+  margin-bottom: 100px;
+}
+.content_area .map_address1 ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.content_area .map_address1 ul li:nth-child(1) {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.content_area .map_address1 ul li:nth-child(1) span {
+  font-size: 2.7rem;
+  color: #3366cc;
+  font-family: 'Roboto', sans-serif;
+}
+.content_area .map_address1 ul li:nth-child(2) {
+  font-size: 1.5rem;
+}
+.content_area .map_address1 ul li .address {
+  margin-right: 20px;
+  font-weight: 500;
+}
+.content_area .map_box {
+  width: 1400px;
+  height: 500px;
+  border: 1px solid #eee;
+}
+.content_area .map_box #map {
+  width: 1400px;
+  height: 500px;
+}
+
+/* 교통안내 */
+.content_area .map_grounds {
+  margin-top: 100px;
+}
+.content_area .map_inner {
+  display: flex;
+  gap: 20px;
+}
+
+.content_area .map_inner .tit {
+  position: relative;
+  font-size: 2.2rem;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  margin-bottom: 50px;
+}
+.content_area .map_inner .tit::before {
+  content: '';
+  display: block;
+  background: #eee;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  top: 70px;
+}
+/*.content_area .map_content1 .tit::after {
+  content: '';
+  display: block;
+  background: #eee;
+  width: 340px;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  top: 280px;
+} */
+
+.content_area .map_content1 {
+  flex: 2;
+}
+
+.content_area .map_content1 li {
+  position: relative;
+  margin: 0 0 30px 0;
+  padding: 38px 30px;
+  background: #fafafa;
+}
+.content_area .map_content1 dl {
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.content_area .map_content1 dl dt {
+  float: left;
+  width: 100px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  color: #111;
+}
+.content_area .map_content1 dl dt strong {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+}
+.content_area .map_content1 dl dd {
+  float: left;
+  width: calc(100% - 180px);
+  margin: 10px 0 0 0;
+  padding-left: 80px;
+  font-size: 1.1rem;
+}
+.content_area .map_content1 dl dd .badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  line-height: 1;
+  width: 28px;
+  height: 28px;
+  font-style: normal;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.badge--metro1 {
+  background-color: #0052a4;
+}
+.badge--metro5 {
+  background-color: #8b50a4;
+}
+.content_area .map_content1 dl dd .badge.badge--green,
+.content_area .map_content1 dl dd .badge.badge--blue,
+.content_area .map_content1 dl dd .badge.badge--red {
+  padding: 3px 12px 4px;
+  width: auto;
+  font-size: 1rem;
+  border-radius: 30px;
+}
+.badge--green {
+  background-color: #53b332;
+}
+.badge--blue {
+  background-color: #0081a1;
+}
+.badge--red {
+  background-color: #e60012;
+}
+
+.content_area .map_content2 {
+  flex: 1;
+}
+.content_area .map_content2 li {
+  position: relative;
+}
+.content_area .map_content2 p {
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: 70px;
+  transform: translate(20px);
+}
+.content_area .map_content2 p::after {
+  content: '';
+  display: block;
+  background: #eee;
+  width: 340px;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  top: 70px;
+}
+.content_area .map_content2 dl {
+  padding: 0 20px;
+  margin-bottom: 50px;
+}
+.content_area .map_content2 dt {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+.content_area .map_content2 dd {
+  font-size: 1.1rem;
+}
+.content_area .map_address2 {
+  margin-bottom: 100px;
+}
+.content_area .map_address2 ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.content_area .map_address2 ul li:nth-child(1) {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+.content_area .map_address2 ul li:nth-child(1) span {
+  font-size: 2.7rem;
+  color: #3366cc;
+  font-family: 'Roboto', sans-serif;
+}
+.content_area .map_address2 ul li:nth-child(2) {
+  font-size: 1.5rem;
+  display: flex;
+}
+.content_area .map_address2 ul li .address {
+  margin-right: 20px;
+  font-weight: 500;
+}

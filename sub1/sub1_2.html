@@ -1,0 +1,419 @@
+<?
+    session_start();
+    @extract($_GET);
+    @extract($_POST);
+    @extract($_SESSION);
+
+    //$userid = $_SESSION['userid'];
+    //$username = $_SESSION['username'];
+    //$usernick = $_SESSION['usernick'];
+    //$userlevel = $_SESSION['userlevel'];
+?>
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>연혁</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" />
+    <!-- common -->
+    <link rel="stylesheet" href="../common/css/common.css" />
+    <link rel="stylesheet" href="../common/css/common_sub.css" />
+    <link rel="stylesheet" href="../common/css/aos.css" />
+    <!-- sub -->
+    <link rel="stylesheet" href="./css/sub1_2content.css" />
+  </head>
+  <body>
+    <div class="skipNav">
+      <a href="#content">본문 바로가기</a>
+      <a href="#gnb">글로벌 네비게이션 바로가기</a>
+    </div>
+
+    <div class="wrap">
+      <? include "../common/sub_header.html" ?>
+      <!-- 글자만 바꾸기 -->
+
+      <div id="mainVisual">
+        <img src="./images/content1/sub_visual01.jpg" alt="" />
+        <div class="sub_title">
+          <strong>회사소개</strong>
+          <p>건설 산업의 독보적인 기술력과 전문성으로 고객 맞춤 서비스를 실현합니다.</p>
+        </div>
+      </div>
+      <div class="sub_nav">
+        <ul>
+          <li><a href="./sub1_1.html">비전과 핵심가치</a></li>
+          <li><a class="current" href="./sub1_2.html">회사연혁</a></li>
+          <li><a href="./sub1_3.html">CEO인사말</a></li>
+          <li><a href="./sub1_4.html">오시는길</a></li>
+        </ul>
+      </div>
+      <article id="content">
+        <div class="title_area">
+          <!-- <div class="line_map">home > 회사소개 > <strong>회사연혁</strong></div> -->
+          <h2 data-aos="fade-up" data-aos-duration="1000">연혁</h2>
+          <p data-aos="fade-up" data-aos-duration="1000">history</p>
+        </div>
+
+        <div class="content_area sub02">
+          <div class="history_nav" data-aos="fade-up" data-aos-duration="800">
+            <ul>
+              <li>
+                <a class="link1" href="#"><span>현재 - 2019</span><span>새로운길</span></a>
+              </li>
+              <li>
+                <a class="link2" href="#"><span>2018 - 2011</span><span>글로벌 R&D</span></a>
+              </li>
+              <li>
+                <a class="link3" href="#"><span>2010 - 1999</span><span>기반을 다지다</span></a>
+              </li>
+              <li>
+                <a class="link4" href="#"><span>1997 - 1971</span><span>여정의 시작</span></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="history_visual" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <img src="./images/content1/history.jpg" alt="" />
+          </div>
+          <div class="history">
+            <div class="his_2023s">
+              <h3 class="hidden">2020's</h3>
+
+              <div class="his_2023 array" data-aos="fade-right">
+                <span>2023</span>
+                <ul>
+                  <li>사상~해운대 고속도로 민간투자사업 수주</li>
+                  <li>GS이니마, 슈웨이하트(Shuweighat) 4단계 해수담수화 사업 수주</li>
+                  <li>GS건설 R&D센터 개관</li>
+                  <li>허윤홍 사장, 신임 CEO 취임</li>
+                </ul>
+              </div>
+              <div class="his_2022 array" data-aos="fade-right">
+                <span>2022</span>
+                <ul>
+                  <li>주택 브랜드 자이(Xi) 출범 20주년</li>
+                  <li>국내 건설사 최초 '그린수소 플랜트 모듈' 미국 수출</li>
+                  <li>100% 리사이클링 소재로 제작한 친환경 조끼 전 현장 도입</li>
+                  <li>주거환경개선 토털 솔루션 '하임랩(HEIMLAB)' 런칭</li>
+                  <li>자이가이스트, 선진 프리패브 컨셉트하우스 오픈</li>
+                </ul>
+              </div>
+              <div class="his_2021 array" data-aos="fade-right">
+                <span>2021</span>
+                <ul>
+                  <li>공정거래 자율준수 프로그램(CP) 도입 선포</li>
+                  <li>서부간선지하도로 개통</li>
+                  <li>호주 North East Link 민간투자사업 수주</li>
+                </ul>
+              </div>
+              <div class="his_2020 array" data-aos="fade-right">
+                <span>2020</span>
+                <ul>
+                  <li>영국 철골 모듈러 전문회사 Elements Europe Ltd. 인수</li>
+                  <li>폴란드 목주 모듈러 전문회사 Danwood S.A. 인수</li>
+                  <li>싱가포르 LTA, 5,500억원 규모 ITTC 수주</li>
+                  <li>서울~문산 고속도로 개통</li>
+                </ul>
+              </div>
+            </div>
+            <div class="his_2018s">
+              <h3 class="hidden">2010's</h3>
+
+              <div class="his_2019 array" data-aos="fade-right">
+                <span>2019</span>
+                <ul>
+                  <li>GS건설 '영업익 1조클럽' 첫 가입</li>
+                  <li>쿠웨이트 도하링크(Doha Link) 개통</li>
+                  <li>베트남 Vam Cong Bridge 개통</li>
+                  <li>우크라이나 Zakarpattia 태양광 발전사업 수주</li>
+                  <li>터키, 14억달러 규모 플랜트 투자사업 참여</li>
+                </ul>
+              </div>
+
+              <div class="his_2018 array" data-aos="fade-right">
+                <span>2018</span>
+                <ul>
+                  <li>세계 최초 경사주탑 노량대교 개통</li>
+                  <li>문재인 대통령 싱가포르 T301현장 방문</li>
+                  <li>탄자니아 New Selander 교량 공사 수주</li>
+                  <li>Numancia 하수처리장 운영 사업 수주 (Sagra Alta, 스페인)</li>
+                </ul>
+              </div>
+
+              <div class="his_2017 array" data-aos="fade-right">
+                <span>2017</span>
+                <ul>
+                  <li>방글라데시 - Gopalganji 400kV Transmission Line 수주</li>
+                  <li>Ruwais Refinery West (RRW) 복구공사 수주</li>
+                  <li>KAKAO 인공지능 홈 IoT 서비스 업무협약 체결</li>
+                  <li>GS INIMA, 칠레 ATACAMA 지역 해수담수화 시설공사 수주</li>
+                </ul>
+              </div>
+
+              <div class="his_2016 array" data-aos="fade-right">
+                <span>2016</span>
+                <ul>
+                  <li>싱가포르 T301 차량기지 프로젝트 단독 수주 (SGD 19.88억)</li>
+                  <li>이란 사우스파스 11, 14 단계 가스 유전 개발 프로젝트 MOU 체결</li>
+                  <li>싱가포르 안전혁신학교 개교</li>
+                  <li>보츠나와 모루풀레 B 2단계 석탄화력 발전 프로젝트 수주</li>
+                </ul>
+              </div>
+
+              <div class="his_2015 array" data-aos="fade-right">
+                <span>2015</span>
+                <ul>
+                  <li>베네수엘라 피리탈 가스 플랜트 프로젝트 단독 수주(26억불)</li>
+                  <li>2015 DJSI Asia Pacific 6년 연속 편입</li>
+                  <li>미국 ENR지 선정 2015년 글로벌 250대 건설사 중 26위 선정</li>
+                  <li>싱가포르 ASAC(Annual Safety Award Convention) 대상 수상</li>
+                </ul>
+              </div>
+
+              <div class="his_2014 array" data-aos="fade-right">
+                <span>2014</span>
+                <ul>
+                  <li>종로구 청진동 그랑서울로 사옥 이전</li>
+                  <li>48억불 규모 쿠웨이트 클린 퓨얼 프로젝트 수주 (당사분 16억불)</li>
+                  <li>60억불 규모 이라크 카르발라 프로젝트 수주 (당사분 23억불)</li>
+                </ul>
+              </div>
+
+              <div class="his_2013 array" data-aos="fade-right">
+                <span>2013</span>
+                <ul>
+                  <li>제12대 임병용 대표이사 취임</li>
+                  <li>제8회 아시아건설종합대상 시상식 - 상생협력부문 종합대상 수상</li>
+                </ul>
+              </div>
+
+              <div class="his_2012 array" data-aos="fade-right">
+                <span>2012</span>
+                <ul>
+                  <li>비젼 2020 선포</li>
+                  <li>소형 주택 브랜드 '자이엘라(Xi-Ella)' 런칭</li>
+                  <li>스페인 이니마 社 인수</li>
+                  <li>가장 신뢰받는 기업상 4년 연속 수상</li>
+                  <li>빌딩스마트협회 주최, BIM Awards 2012 시공부문 대상 수상</li>
+                </ul>
+              </div>
+
+              <div class="his_2011 array" data-aos="fade-right">
+                <span>2011</span>
+                <ul>
+                  <li>가장 신뢰받는 기업상 3년 연속 수상</li>
+                  <li>GS건설 ‘다우존스 지속가능경영지수월드’에 2년연속 편입</li>
+                  <li>2011 대한민국 지속가능성 대회 - KRCA 최초발간부문 수상</li>
+                </ul>
+              </div>
+
+              <div class="his_2010 array" data-aos="fade-right">
+                <span>2010</span>
+                <ul>
+                  <li>새로운 조직문화 창출을 위한 핵심가치 선포</li>
+                  <li>가장신뢰받는 기업 2년연속 수상</li>
+                  <li>2011년 세계적 유명 건설전문지 ENR지에 의해 세계36위 건설사로 선정</li>
+                </ul>
+              </div>
+            </div>
+            <div class="his_2010s">
+              <h3 class="hidden">2000's</h3>
+              <div class="his_2009 array" data-aos="fade-right">
+                <span>2009</span>
+                <ul>
+                  <li>제 11대 대표이사 허명수 사장 취임</li>
+                  <li>제 13회 살기좋은 아파트상 : '반포자이' 대통령상 수상</li>
+                  <li>2009 한국건축문화대상 : '부띠크모나코' 민간부분 대상 수상</li>
+                  <li>제5회 대한민국 토목, 건축대상 : '타임스퀘어' 종합건축 대상 수상</li>
+                </ul>
+              </div>
+
+              <div class="his_2008 array" data-aos="fade-right">
+                <span>2008</span>
+                <ul>
+                  <li>'2008 퍼스트브랜드 대상' 시상식 : '자이' 아파트 부문 3년 연속 1위</li>
+                  <li>제42회 납세자의 날 '1천억 고액 납세자탑' 수상</li>
+                </ul>
+              </div>
+              <div class="his_2007 array" data-aos="fade-right">
+                <span>2007</span>
+                <ul>
+                  <li>미국 ENR지 선정 2007년도 세계 225개 건설사 중 31위 선정</li>
+                  <li>제41 납세자의 날 '금탑산업훈장' 수상</li>
+                </ul>
+              </div>
+              <div class="his_2006 array" data-aos="fade-right">
+                <span>2006</span>
+                <ul>
+                  <li>미국 ENR지 선정 2006년도 세계 225개 건설사 중 31위 선정</li>
+                  <li>한국 CFO대상 및 한국 재무 혁신기업대상 수상</li>
+                  <li>국내 건설업계 최초, 국제 IT시스템 품질평가기준 CMMI 레벨4 인증획득</li>
+                </ul>
+              </div>
+              <div class="his_2005 array" data-aos="fade-right">
+                <span>2005</span>
+                <ul>
+                  <li>GS건설주식회사로 상호 변경</li>
+                  <li>2005 한국서비스 품질지수 (KS-SQI) 1위 기업 시상식 - 아파트 부문 1위</li>
+                  <li>서울시 청계천복원공사 은탑산업훈장</li>
+                  <li></li>
+                </ul>
+              </div>
+              <div class="his_2004 array" data-aos="fade-right">
+                <span>2004</span>
+                <ul>
+                  <li>시가총액 1조원 달성</li>
+                  <li>'신월성 원자력 1,2호기 주설비 공사수주'로 원전사업 진출</li>
+                  <li>'기업지배구조 헌장' 제정</li>
+                </ul>
+              </div>
+              <div class="his_2003 array" data-aos="fade-right">
+                <span>2003</span>
+                <ul>
+                  <li>'VISION 2010' 선포</li>
+                  <li>'2004년 환경경영대상' 건설업 부문 대상 수상</li>
+                  <li>'자이' 2004 소비자 웰빙지수 1위 브랜드 선정</li>
+                </ul>
+              </div>
+              <div class="his_2002 array" data-aos="fade-right">
+                <span>2002</span>
+                <ul>
+                  <li>허창수 대표이사회장 선임</li>
+                  <li>제10대 김갑렬 사장 취임</li>
+                  <li>'주택건설의 날' 대통령표창 수상</li>
+                  <li>한국전력문화회관 '서울특별시 건축상' 수상</li>
+                  <li>新주택브랜드 "Xi(자이)" 런칭</li>
+                </ul>
+              </div>
+              <div class="his_2001 array" data-aos="fade-right">
+                <span>2001</span>
+                <ul>
+                  <li>증권거래소 선정 기업지배구조 모범기업 최우수업체 선정</li>
+                  <li>대한매일 하반기 히트상품 아파트부문 선정</li>
+                  <li>세계광고대상 기업 PR 부문 우수상 수상</li>
+                </ul>
+              </div>
+              <div class="his_2000 array" data-aos="fade-right">
+                <span>2000</span>
+                <ul>
+                  <li>하수처리 "BIO-NET" 공법 건설 교통부 신기술 지정</li>
+                  <li>서해대교, 대통령 표창 수상</li>
+                </ul>
+              </div>
+            </div>
+            <div class="his_1997s">
+              <h3 class="hidden">1990's</h3>
+
+              <div class="his_1999 array" data-aos="fade-right">
+                <span>1999</span>
+                <ul>
+                  <li>LG건설, LG 엔지니어링 합병</li>
+                  <li>증권거래소 선정 우수공시상 수상</li>
+                </ul>
+              </div>
+              <div class="his_1998 array" data-aos="fade-right">
+                <span>1998</span>
+                <ul>
+                  <li>제9대 민수기 사장 취임</li>
+                  <li>‘98 한국건축문화 대상’에 “고려포리머 사옥” 본상 수상</li>
+                  <li>
+                    LG-HP SUNFLOWER INTERNATIONAL VILLAGE, <br />
+                    베트남 하이풍 인민위원회 표창 수상
+                  </li>
+                </ul>
+              </div>
+
+              <div class="his_1995 array" data-aos="fade-right">
+                <span>1995</span>
+                <ul>
+                  <li>LG건설로 사명 변경</li>
+                  <li>국내최초로 자체감리팀 구성</li>
+                </ul>
+              </div>
+              <div class="his_1994 array" data-aos="fade-right">
+                <span>1994</span>
+                <ul>
+                  <li>ISO(국제표준화기구) 9001 국제품질 경영규격 인증 획득</li>
+                  <li>“한국형 중소도시 폐기물 소각시스템” 기술 KT마크 (한국신기술) 획득</li>
+                  <li>중국건축공정총공사와 건설협력 약정 체결</li>
+                </ul>
+              </div>
+            </div>
+            <div class="his1980s">
+              <h3 class="hidden">1980's</h3>
+
+              <div class="his_1988 array" data-aos="fade-right">
+                <span>1988</span>
+                <ul>
+                  <li>럭키금성 美州본부 기공</li>
+                  <li>사우디 이맘대학교 스포츠센터 준공</li>
+                  <li>역전빌딩으로 사옥이전</li>
+                </ul>
+              </div>
+              <div class="his_1987 array" data-aos="fade-right">
+                <span>1987</span>
+                <ul>
+                  <li>럭키금성 트윈타워 준공</li>
+                </ul>
+              </div>
+              <div class="his_1984 array" data-aos="fade-right">
+                <span>1984</span>
+                <ul>
+                  <li>해외건설 10억불 건설수출탑 수상</li>
+                  <li>미국 현지법인 Lucky Development International Inc. 설립</li>
+                </ul>
+              </div>
+              <div class="his_1981 array" data-aos="fade-right">
+                <span>1981</span>
+                <ul>
+                  <li>기업공개</li>
+                </ul>
+              </div>
+            </div>
+            <div class="his1970s">
+              <h3 class="hidden">1970's</h3>
+
+              <div class="his_1977 array" data-aos="fade-right">
+                <span>1977</span>
+                <ul>
+                  <li>럭키해외건설주식회사 설립</li>
+                </ul>
+              </div>
+              <div class="his_1975 array" data-aos="fade-right">
+                <span>1975</span>
+                <ul>
+                  <li>럭키개발주식회사로 상호 변경</li>
+                </ul>
+              </div>
+              <div class="his_1970 array" data-aos="fade-right">
+                <span>1970</span>
+                <ul>
+                  <li>락희(樂喜)개발주식회사 창립</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <?include "../common/sub_footer.html"?>
+    </div>
+
+    <script src="../common/js/jquery-1.12.4.min.js"></script>
+    <script src="../common/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="../common/js/jquery.easing.1.3.js"></script>
+    <script src="../common/js/common.js"></script>
+    <script src="../mainjs/mainjs.js"></script>
+    <script src="./js/sub1_2.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: "ease-in-out-sine",
+      });
+    </script>
+  </body>
+</html>

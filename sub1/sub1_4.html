@@ -1,0 +1,154 @@
+<?
+    session_start();
+    @extract($_GET);
+    @extract($_POST);
+    @extract($_SESSION);
+
+    //$userid = $_SESSION['userid'];
+    //$username = $_SESSION['username'];
+    //$usernick = $_SESSION['usernick'];
+    //$userlevel = $_SESSION['userlevel'];
+?>
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>오시는길</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" />
+    <link rel="stylesheet" href="../common/css/common.css" />
+    <link rel="stylesheet" href="../common/css/common_sub.css" />
+    <link rel="stylesheet" href="../common/css/aos.css" />
+
+    <link rel="stylesheet" href="./css/sub1_4content.css" />
+  </head>
+  <body>
+    <div class="skipNav">
+      <a href="#content">본문 바로가기</a>
+      <a href="#gnb">글로벌 네비게이션 바로가기</a>
+    </div>
+
+    <div class="wrap">
+      <? include "../common/sub_header.html" ?>
+
+      <div id="mainVisual">
+        <img src="./images/content1/sub_visual01.jpg" alt="" />
+        <div class="sub_title">
+          <strong>회사소개</strong>
+          <p>건설 산업의 독보적인 기술력과 전문성으로 고객 맞춤 서비스를 실현합니다.</p>
+        </div>
+      </div>
+      <div class="sub_nav">
+        <ul>
+          <li><a href="./sub1_1.html">비전과 핵심가치</a></li>
+          <li><a href="./sub1_2.html">회사연혁</a></li>
+          <li><a href="./sub1_3.html">CEO인사말</a></li>
+          <li><a class="current" href="./sub1_4.html">오시는길</a></li>
+        </ul>
+      </div>
+      <article id="content">
+        <div class="title_area">
+          <!-- <div class="line_map">home > 회사소개 > <strong>오시는길</strong></div> -->
+          <h2 data-aos="fade-up" data-aos-duration="1000">오시는길</h2>
+          <p data-aos="fade-up" data-aos-duration="1000">directions</p>
+        </div>
+
+        <div class="content_area">
+          <div class="map_address1">
+            <ul>
+              <li><span>그랑</span>서울</li>
+              <li>
+                <span class="address">주소</span>
+                <span>서울 종로구 종로 33 ( 청진동 70번지 그랑서울 )</span>
+              </li>
+            </ul>
+          </div>
+          <div class="map_box">
+            <div id="map"></div>
+          </div>
+          <div class="map_grounds">
+            <div class="map_inner">
+              <div class="map_content1">
+                <div class="tit">교통 안내</div>
+                <ul>
+                  <li>
+                    <dl class="map_info">
+                      <dt><img src="./images/location_metro.png" alt="" /><strong>지하철</strong></dt>
+                      <dd>
+                        <i class="badge badge--metro1">1<span class="blind">1호선</span></i> 종각역 1번 출구
+                      </dd>
+                      <dd>
+                        <i class="badge badge--metro5">5<span class="blind">5호선</span></i>
+                        광화문역 4번 출구
+                      </dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <dl class="map_info">
+                      <dt><img src="./images/location_bus.png" alt="" /><strong>버스</strong></dt>
+                      <dd>
+                        <span><i class="badge badge--blue">간선/순환</i></span>
+                        <span>N26, N37, 103, 109, 160, 260, 270, 271, 273, 370, 470, 720 </span>
+                      </dd>
+                      <dd>
+                        <span><i class="badge badge--red">직행</i></span>
+                        <span>1020, 7212 </span>
+                      </dd>
+                    </dl>
+                  </li>
+                </ul>
+              </div>
+              <div class="map_content2">
+                <div class="tit">그랑서울 오시는 길</div>
+                <ul>
+                  <li>
+                    <dl>
+                      <dt><strong>주소</strong></dt>
+                      <dd>서울특별시 종로구 종로 33 그랑서울</dd>
+                    </dl>
+                    <dl>
+                      <dt><strong>운영시간</strong></dt>
+                      <dd>06 : 30 ~ 23 : 30</dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <dl>
+                      <dt><strong>주차 요금</strong></dt>
+                      <dd>1시간 기준 : 6,000원</dd>
+                    </dl>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <?include "../common/sub_footer.html"?>
+    </div>
+
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=e0a173553c1adb6e5c66e72946c70112"></script>
+    <script src="./js/map.js"></script>
+
+    <script>
+      var options = {
+        center: new daum.maps.LatLng(37.50183104793769, 127.03730917646303),
+        level: 2,
+      };
+    </script>
+
+    <script src="../common/js/jquery-1.12.4.min.js"></script>
+    <script src="../common/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="../common/js/jquery.easing.1.3.js"></script>
+    <script src="../common/js/common.js"></script>
+    <script src="../mainjs/mainjs.js"></script>
+
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: "ease-in-out-sine",
+      });
+    </script>
+  </body>
+</html>

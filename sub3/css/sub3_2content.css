@@ -1,0 +1,217 @@
+@charset "utf-8";
+
+.wrap {
+  width: 100%;
+  overflow: hidden;
+}
+
+#content .content_area {
+  margin: 0 auto;
+  padding-top: 50px;
+}
+#content .content_area .content_top .content_top_txt {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+#content .content_area .content_top .content_top_txt p {
+  width: 1400px;
+  font-size: 3rem;
+  text-align: center;
+  margin: 50px auto;
+  font-weight: 500;
+}
+
+#content .content_area .content_top .content_top_txt span {
+  width: 1400px;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2.3rem;
+}
+
+#content .content_area .main_content {
+  width: 100%;
+}
+
+#content .content_area .main_content section {
+  width: 1400px;
+  position: relative;
+  margin: 0 auto;
+}
+
+#content .content_area .sub_visual {
+  width: 2000px;
+  margin: 0 auto;
+}
+
+#content .content_area .sub_visual img {
+  width: 2000px;
+}
+
+.main_content section .sub_list {
+  display: flex;
+  margin-top: 100px;
+}
+
+.main_content section .sub_list .sub_list_txt {
+  width: 700px;
+  padding: 80px 0 0 150px;
+}
+
+.main_content section .sub_list .sub_list_txt span {
+  font-size: 1.5rem;
+  color: #3366cc;
+}
+
+.main_content section .sub_list .sub_list_txt span::before {
+  content: "";
+  color: #3366cc;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+.main_content section .sub_list .sub_list_txt p {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #000;
+  font-family: Arial;
+  margin-top: 20px;
+}
+
+.main_content section .sub_list .sub_list_txt dl {
+  margin-top: 50px;
+  color: #3366cc;
+}
+
+.main_content section .sub_list .sub_list_txt dt {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.main_content section .sub_list .sub_list_txt dd {
+  font-size: 1.2rem;
+  margin-top: 30px;
+  font-weight: 400;
+}
+
+.main_content section .sub_list .sub_list_img {
+  width: 700px;
+}
+.main_content section .sub_list .sub_list_img img {
+  width: 700px;
+  height: 700px;
+}
+
+.main_content section .sub_list_bottom {
+  display: flex;
+  margin: 100px 0 100px 0;
+}
+
+.main_content section .sub_list_bottom img {
+  width: 650px;
+}
+.main_content section .sub_list_bottom img:nth-child(1) {
+  margin-right: 100px;
+}
+
+.main_content section .sub_list_bottomtxt {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.main_content section.num02 {
+  background: #f1f4f8;
+  padding: 100px 0;
+}
+
+.main_content section.num02 .sub_list .sub_list_txt {
+  padding: 80px 0 0 0;
+}
+#content .content_area .main_content section.num02 {
+  width: 100% !important;
+  margin-top: 200px;
+}
+
+.main_content section.num02 .sub_list {
+  width: 1400px;
+  margin: 0 auto 0;
+}
+.main_content section.num02 .sub_list_bottom {
+  width: 1400px;
+  margin: 100px auto;
+}
+
+.main_content section.num02 .sub_list_bottomtxt {
+  width: 1400px;
+  margin: 0 auto;
+}
+.main_content section.num03 {
+  width: 100% !important;
+  background: url(../images/content2/rail_bg.jpg) 0 0 no-repeat;
+}
+
+.main_content .num03 .sub_list {
+  width: 1400px;
+  margin: 300px auto 100px;
+  padding: 150px 0 0 0;
+}
+
+.main_content section.num03 .sub_list_txt span,
+.main_content section.num03 .sub_list_txt p {
+  color: #fff;
+}
+
+.main_content section.num03 .sub_list .sub_list_txt {
+  padding: 50px 0 0 0;
+}
+
+.main_content section.num03 .sub_list .sub_list_txt dl {
+  margin-top: 266px;
+  color: #e65024;
+}
+
+.main_content .num03 .sub_list_bottom {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.main_content .num03 .sub_list_bottomtxt {
+  width: 1400px;
+  margin: 100px auto 0;
+}
+
+.main_content section.num05 .sub_list .sub_list_txt {
+  padding: 50px 0 0 0;
+}
+
+#content .content_area .main_content section.num05 {
+  width: 100%;
+  background: #f1f4f8;
+  padding: 100px 0;
+  margin-top: 100px;
+}
+
+.main_content section.num05 .sub_list {
+  width: 1400px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.main_content section.num05 .sub_list_bottom {
+  width: 1400px;
+  display: flex;
+  margin: 100px auto;
+}
+
+.main_content section.num05 .sub_list_bottomtxt {
+  width: 1400px;
+  margin: 0 auto;
+}
+/* 
+.img_scale {
+  transform: scale(1.2);
+} */
