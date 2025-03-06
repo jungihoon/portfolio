@@ -6,7 +6,7 @@ PC 전용 웹, 모바일 웹, 반응형 웹 입니다.<br>
 ## 🔗 URL
 
 - 기업형 웹 프로젝트(GS건설)
-  - <a href="https://www.google.com/" target="_blank">새 탭에서 열기</a>
+  - https://a7s8d9789.mycafe24.com/
 - 반응형 웹(Mercedes-Benz)
   - https://a7s8d9789.mycafe24.com/media/
 - React SPA(Korail)
