@@ -1,0 +1,349 @@
+/* 와이드 pc  */
+
+.videoBox {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+}
+
+#imgBG {
+  position: fixed; /*고정=>fixed/ 스크롤처리=>absolute */
+  left: 50%;
+  top: 50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+  width: auto;
+  min-width: 100%; /*동영상 너비를 꽉차게*/
+  height: auto;
+  min-height: 100%; /*동영상 높이를 꽉차게*/
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -100;
+}
+
+#wrap .visual_txt {
+  position: absolute;
+  top: 74%;
+  left: 8.8%;
+}
+
+#wrap .visual_txt span {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #fff;
+}
+#wrap .visual_txt p {
+  font-size: 1.1rem;
+  color: #fff;
+  padding-top: 30px;
+}
+
+.down {
+  display: block;
+  font-size: 20px;
+  position: absolute;
+  left: 50%;
+  margin-left: -90px;
+  bottom: 20%;
+  animation: ani 1s infinite alternate;
+}
+@keyframes ani {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+    color: #fff;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0.8;
+    color: #888;
+  }
+}
+
+#content {
+  width: 100%;
+  margin: 0;
+  background: rgba(0, 0, 0, 0.9);
+  position: relative;
+}
+#content .sec {
+  max-width: 2100px;
+  width: 84%;
+  padding: 50px 20px 100px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+#content h2 {
+  position: absolute;
+  top: -500px;
+  width: 100%;
+  text-align: center;
+  font-size: 4em;
+}
+
+#content .sec > span {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+#content .sec > p {
+  color: #fff;
+  padding: 20px 0 100px;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+/* brand_slide */
+.service-swiper {
+  width: 100%;
+  height: 100%;
+}
+.service-swiper .swiper-wrapper {
+  max-width: 2100px;
+  padding: 0 0 50px 0;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.service-swiper .swiper-slide .txtBox {
+  margin: 20px 0 0 0;
+}
+.service-swiper .swiper-slide strong {
+  display: block;
+  width: 100%;
+  font-weight: 500;
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.service-swiper .swiper-slide p {
+  margin: 10px 10px 0 0;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.3;
+  word-break: break-all;
+}
+
+.multi-line-ellipsis {
+  display: -webkit-box;
+  overflow: hidden;
+  line-height: 1.5;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.service-swiper .swiper-slide strong {
+  padding-bottom: 43px;
+}
+
+.service-swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 4/3;
+}
+
+.service-swiper-nav .swiper-pagination-bullet {
+  background: #eee;
+}
+
+.service-swiper-nav .swiper-button-next,
+.service-swiper-nav .swiper-button-prev {
+  top: 30%;
+  height: 3rem;
+  width: 3rem;
+  border: 1px solid transparent;
+  border-radius: 100%;
+  font-size: 0;
+  line-height: 0;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.6);
+  color: #000;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.1), 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  display: none;
+}
+
+/* hitory */
+.history > ul {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 15px;
+}
+
+.history > ul > li {
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.history .history_box figcaption > ul {
+  width: 100%;
+  position: absolute;
+  bottom: 40%;
+  z-index: 3;
+}
+
+.history .history_box figcaption li {
+  width: 100%;
+  text-align: center;
+  transform: translateY(100%);
+}
+
+.history .history_box figcaption span {
+  display: block;
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.history ul li:hover figcaption p {
+  transition: all 1s ease-out;
+  opacity: 1;
+}
+
+.history > ul > li:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+
+.history ul li:hover .heading {
+  transform: translateY(270%);
+  transition: all 0.5s ease-out;
+}
+.history ul li img {
+  transition: all 0.5s ease-out;
+}
+.history ul li:hover img {
+  transform: scale(1.1);
+}
+
+.history figcaption .heading_txt {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  color: #fff;
+  opacity: 0;
+  margin: 0 10%;
+  text-align: justify;
+  word-break: break-all;
+  border-bottom: 1px solid #fff;
+  font-size: 1.1rem;
+  box-sizing: border-box;
+  padding-bottom: 20px;
+}
+
+.history .history_box {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.history .history_box img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 1/1;
+}
+
+.history ul li:nth-child(2) img {
+  object-position: bottom;
+}
+.history ul li:nth-child(4) img,
+.history ul li:nth-child(7) img {
+  object-position: left;
+}
+
+/* 일반 pc */
+@media screen and (max-width: 1280px) {
+  .service-swiper .swiper-slide strong {
+    font-size: 1.4rem;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+  .history .history_box figcaption span {
+    font-size: 1rem;
+  }
+
+  .history figcaption .heading_txt {
+    font-size: 0.8rem;
+  }
+}
+
+/* 테블릿 */
+@media screen and (max-width: 1024px) {
+  .history > ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .history ul li:nth-child(4),
+  .history ul li:nth-child(7) {
+    display: none;
+  }
+
+  .history .history_box figcaption .heading {
+    display: none;
+  }
+  .history > ul > li:hover::before {
+    content: "";
+    display: none;
+  }
+  .history .history_box figcaption > ul {
+    position: static;
+  }
+  .history .history_box figcaption li {
+    transform: translateY(0);
+  }
+  .history figcaption .heading_txt {
+    position: static;
+    opacity: 1;
+    border: none;
+    font-size: 0.8rem;
+  }
+  .history ul li:hover img {
+    transform: scale(1);
+  }
+  .history .history_box img {
+    border-radius: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width: 768px) {
+  .history > ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* 모바일 */
+@media screen and (max-width: 640px) {
+}

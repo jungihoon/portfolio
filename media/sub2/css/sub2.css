@@ -1,0 +1,564 @@
+/* 와이드 pc  */
+
+.videoBox {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+}
+
+#imgBG {
+  position: fixed; /*고정=>fixed/ 스크롤처리=>absolute */
+  left: 50%;
+  top: 50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+  width: auto;
+  min-width: 100%; /*동영상 너비를 꽉차게*/
+  height: auto;
+  min-height: 100%; /*동영상 높이를 꽉차게*/
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -100;
+}
+
+#wrap .visual_txt {
+  position: absolute;
+  top: 74%;
+  left: 8.8%;
+}
+
+#wrap .visual_txt span {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #fff;
+}
+#wrap .visual_txt p {
+  font-size: 1.1rem;
+  color: #fff;
+  padding-top: 30px;
+}
+
+.down {
+  display: block;
+  font-size: 20px;
+  position: absolute;
+  left: 50%;
+  margin-left: -90px;
+  bottom: 20%;
+  animation: ani 1s infinite alternate;
+}
+@keyframes ani {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+    color: #fff;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0.8;
+    color: #888;
+  }
+}
+
+#content {
+  width: 100%;
+  margin: 0;
+
+  position: relative;
+}
+#content .sec {
+  /* max-width: 2100px;
+  width: 84%; */
+  padding: 150px 20px 100px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+#content h3 {
+  font-size: 4.5rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+#content .sec > span {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+#content .sec > p {
+  color: #fff;
+  padding: 20px 0 150px;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.sec .sec_list {
+  display: flex;
+  width: 100%;
+  height: 85vh;
+  position: relative;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.sec .sec_list .txt_box {
+  width: 100%;
+  text-align: center;
+  transform: translateY(40vh);
+}
+
+.sec .sec_list .txt_box .sub_txtbox {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 40px;
+}
+.sec .sec_list .txt_box .sub_txtbox span {
+  padding: 5px 15px;
+  font-size: 0.8rem;
+}
+.sec .sec_list .txt_box .sub_txt {
+  display: block;
+  width: 25%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  white-space: nowrap;
+}
+
+.sec .sec_list .txt_box .sub_bot {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.sec .sec_list .txt_box .sub_bot span {
+  font-size: 0.8rem;
+}
+.sec .sec_list .txt_box .sub_txtbot {
+  width: 25%;
+  height: 100%;
+}
+
+.sec .sec_list li:hover .sub_txt {
+  opacity: 1;
+}
+
+.sec .sec_list li {
+  width: 25%;
+  transition: all 0.5s;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
+}
+
+.sec .sec_list li .list_bg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.sec .sec_list li:hover .list_bg::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.sec .sec_list li:nth-child(4) {
+  border: none;
+}
+
+.sec .sec_list li:hover {
+  width: 40%;
+}
+
+.sec .sec_list li:hover img {
+  opacity: 1;
+}
+
+.sec .sec_list li img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  opacity: 0;
+  object-fit: cover;
+  object-position: center;
+  transition: all 0.5s ease-out;
+}
+/* luxury */
+.luxury {
+  padding-bottom: 195px;
+}
+
+.luxury .luxury_top {
+  width: 100%;
+}
+.luxury .amg {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "a e e"
+    "c d b";
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.luxury .amg h3 {
+  padding: 20px;
+}
+
+.luxury .amg span {
+  padding: 20px;
+  font-size: 3.2rem;
+  text-align: justify;
+  word-break: break-all;
+}
+
+.luxury .amg li:nth-child(1) {
+  grid-area: a;
+}
+
+.luxury .amg li:nth-child(2) {
+  grid-area: b;
+}
+
+.luxury .amg li:nth-child(3) {
+  grid-area: c;
+}
+
+.luxury .amg li:nth-child(4) {
+  grid-area: d;
+}
+.luxury .amg li:nth-child(5) {
+  grid-area: e;
+}
+
+.luxury .amg li:nth-child(5) span {
+  display: block;
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  text-align: justify;
+  word-break: break-all;
+}
+
+.luxury img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: all 0.5s;
+}
+
+.luxury li {
+  overflow: hidden;
+}
+
+.luxury li:hover img {
+  transform: scale(1.1);
+}
+/* Maybach */
+.luxury .maybach {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "e e a"
+    "c d b";
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-top: 300px;
+}
+
+.luxury .maybach h3 {
+  padding: 20px;
+}
+
+.luxury .maybach span {
+  padding: 20px;
+}
+
+.luxury .maybach li:nth-child(1) {
+  grid-area: a;
+  /* aspect-ratio: 3/1; */
+}
+
+.luxury .maybach li:nth-child(2) {
+  grid-area: b;
+}
+
+.luxury .maybach li:nth-child(3) {
+  grid-area: c;
+}
+
+.luxury .maybach li:nth-child(4) {
+  grid-area: d;
+}
+.luxury .maybach li:nth-child(5) {
+  grid-area: e;
+}
+
+.luxury .maybach li:nth-child(5) span {
+  display: block;
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  padding: 0px 85px 0 20px;
+}
+
+/* classic */
+.luxury .luxury_bot {
+  margin-bottom: 300px;
+}
+
+.luxury .concept {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "a f e"
+    "c d b";
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+
+  margin-top: 300px;
+}
+
+.luxury .concept h3 {
+  padding: 20px;
+}
+
+.luxury .concept span {
+  padding: 20px;
+}
+
+.luxury .concept li:nth-child(1) {
+  grid-area: a;
+  /* aspect-ratio: 3/1; */
+}
+
+.luxury .concept li:nth-child(2) {
+  grid-area: b;
+}
+
+.luxury .concept li:nth-child(3) {
+  grid-area: c;
+}
+
+.luxury .concept li:nth-child(4) {
+  grid-area: d;
+}
+.luxury .concept li:nth-child(5) {
+  grid-area: e;
+}
+.luxury .concept li:nth-child(6) {
+  grid-area: f;
+}
+
+.luxury .concept li:nth-child(6) span {
+  display: block;
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 1.25;
+  word-break: break-all;
+}
+
+/* 빵꾸 */
+#content .luxury {
+  padding-bottom: 195px;
+}
+.hole {
+  background: rgba(0, 0, 0, 0.2);
+}
+.hole .hole_bg {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 500px;
+  padding: 0 5%;
+}
+.hole .hole_bg strong {
+  color: #fff;
+  font-size: 3rem;
+  padding: 0 20%;
+}
+
+.hole2 .hole_bg {
+  width: 2000px;
+  height: 300px;
+  background: rgba(0, 0, 0, 0.2);
+}
+/* 일반 pc */
+@media screen and (max-width: 1280px) {
+}
+
+/* 테블릿 */
+@media screen and (max-width: 1024px) {
+  /* benz */
+  .sec .sec_list .txt_box {
+    transform: translateY(15vh);
+  }
+  .sec .sec_list .txt_box .sub_txt {
+    opacity: 1;
+    width: 45%;
+    margin: 0 auto 5px;
+  }
+
+  .sec .sec_list .txt_box .sub_txtbox {
+    display: block;
+  }
+  .sec .sec_list .txt_box .sub_bot {
+    display: block;
+    margin-top: 0;
+  }
+
+  .sec .sec_list {
+    flex-wrap: wrap;
+  }
+
+  .sec .sec_list li {
+    width: 50%;
+    position: relative;
+  }
+
+  .luxury li:hover img {
+    transform: scale(1);
+    transition: none;
+  }
+  .sec .sec_list li img {
+    opacity: 0.8;
+  }
+  .sec .sec_list li:hover {
+    width: 50%;
+  }
+  .sec .sec_list li:hover .list_bg::before {
+    background: none;
+  }
+  /* amg */
+  .luxury .amg {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "a e"
+      "d b";
+  }
+
+  .luxury .amg li:nth-child(3) {
+    display: none;
+  }
+
+  /* maybach */
+  .luxury .maybach {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "e a"
+      "d b";
+  }
+  .luxury .maybach li:nth-child(3) {
+    display: none;
+  }
+
+  /* concept */
+  .luxury .concept {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "a f"
+      "c e";
+  }
+
+  .luxury .concept li:nth-child(2) {
+    display: none;
+  }
+  .luxury .concept li:nth-child(4) {
+    display: none;
+  }
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width: 768px) {
+  .hole {
+    display: none;
+  }
+  /* benz */
+  .sec .sec_list {
+    height: 130vh;
+  }
+  .sec .sec_list li {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 100px;
+  }
+
+  .sec .sec_list li:hover {
+    width: 100%;
+  }
+
+  .sec .sec_list .txt_box .sub_txtbox {
+    display: none;
+  }
+  .sec .sec_list .txt_box .sub_bot {
+    display: none;
+  }
+  .sec .sec_list li .list_bg {
+    height: auto;
+  }
+  .sec .sec_list .txt_box {
+    transform: translateY(280px);
+  }
+  #content .sec_list h3 {
+    font-size: 2rem;
+  }
+  /* amg */
+  .luxury .amg {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      "b"
+      "e";
+  }
+  .luxury .amg li:nth-child(1),
+  .luxury .amg li:nth-child(4) {
+    display: none;
+  }
+
+  /* maybach */
+  .luxury .maybach {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      "a"
+      "e";
+  }
+  .luxury .maybach li:nth-child(2),
+  .luxury .maybach li:nth-child(4) {
+    display: none;
+  }
+
+  /* concept */
+  .luxury .concept {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      "a"
+      "f";
+  }
+  .luxury .concept li:nth-child(3),
+  .luxury .concept li:nth-child(5) {
+    display: none;
+  }
+}
+
+/* 모바일 */
+@media screen and (max-width: 640px) {
+}
