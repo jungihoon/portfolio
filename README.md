@@ -5,7 +5,7 @@
 
 ## 🔗 URL
 
-- 기업형 웹 프로젝트(GS건설)
+- 기업형 웹(GS건설)
   - https://a7s8d9789.mycafe24.com/
 - 반응형 웹(Mercedes-Benz)
   - https://a7s8d9789.mycafe24.com/media/
